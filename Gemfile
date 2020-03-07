@@ -33,6 +33,7 @@ group :development, :test do
   gem 'sqlite3', '~> 1.4'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'database_cleaner'
 end
 
 group :development do
@@ -47,8 +48,7 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
   gem 'cucumber-rails', require: false
-  # database_cleaner is not mandatory, but highly recommended
-  gem 'database_cleaner'
+  gem 'database_cleaner-active_record'
 end
 
 group :production do
